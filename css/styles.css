@@ -113,7 +113,6 @@ align-items: center;
 }
 
 .contacts-link {
-
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -176,7 +175,7 @@ align-items: center;
     padding: 16px 32px;
     border: none;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: backgraund-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -221,11 +220,15 @@ background-color: #404bbf;
 }
 
 .feauture-box-icon {
-        border: 1px solid #8E8F99;
-        border-radius: 4px;
-        background-color: #F4F4FD;
-        padding: 24px 100px;
+       border: 1px solid #8E8F99;
+       border-radius: 4px;
+       background-color: #F4F4FD;
+       
        margin-bottom: 8px; 
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 112px
 }
 
 .item-title {
@@ -359,7 +362,10 @@ background-color: #404bbf;
 
 .footer-container{
     display: flex;
-    gap: 120px;
+    align-items: baseline;
+}
+.footer-container-logo {
+margin-right: 120px;
 }
 
 .footer-logo {
@@ -408,13 +414,14 @@ background-color: #404bbf;
    display: flex;
    justify-content: center;
    align-items: center;
-   transition: bacground-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .footer-soc-ikon {
     fill: #F4F4FD;
 }
 
-.footer-soc-link:hover {
+.footer-soc-link:hover, 
+.footer-soc-link:focus {
     background-color: #31D0AA;
 }
